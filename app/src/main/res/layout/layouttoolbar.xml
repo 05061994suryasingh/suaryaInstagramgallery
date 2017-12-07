@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:minHeight="?attr/actionBarSize"
+    android:background="#ffffff">
+    <RelativeLayout
+        android:id="@+id/rlToolbarPhoneFinder"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dim_40"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/imgMenuPhonefinder"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:src="@drawable/backicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/txtTopBar"
+            android:text="@string/picker"
+            android:layout_toEndOf="@+id/imgMenuPhonefinder"
+            android:layout_marginLeft="@dimen/dim_15"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/imgAccount"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dim_20"
+            android:layout_alignParentRight="true"
+            android:text="@string/next"
+            android:textSize="18sp"
+            android:background="@android:color/transparent"
+            android:textColor="@color/green"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</android.support.v7.widget.Toolbar>
